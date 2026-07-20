@@ -77,3 +77,5 @@ O tratamento de erros também exigiu atenção especial. Alguns cenários, como 
 Por fim, a implementação do endpoint de consulta trouxe desafios adicionais relacionados à estrutura de pacotes e imports ausentes. A criação do ViolationQueryService e a correção dos imports no controller eliminaram os erros de compilação e permitiram a inclusão de testes dedicados para esse endpoint.
 
 Esses desafios, embora naturais em um projeto com múltiplas camadas, contribuíram para uma solução mais robusta, bem estruturada e alinhada com as boas práticas do ecossistema Spring Boot.
+
+![Tela da aplicação](img/2026_07_20_tela.png)
