@@ -1,22 +1,17 @@
 # Speed Violation Service
+
 Microserviço desenvolvido como prova prática para a Velsis Sistemas e Tecnologia Viária.  
-O serviço processa leituras de velocidade captadas por equipamentos de fiscalização, aplica
-a tolerância legal, calcula o excesso percentual e determina se houve infração conforme o
-Código de Trânsito Brasileiro (CTB). Infrações são armazenadas em memória e podem ser
-consultadas por placa.
+O serviço processa leituras de velocidade captadas por equipamentos de fiscalização, aplica a tolerância legal, calcula o excesso percentual e determina se houve infração conforme o Código de Trânsito Brasileiro (CTB).  
+Infrações são armazenadas em memória e podem ser consultadas por placa.
 
 ---
 
 ## 1. Tecnologias Utilizadas
-- Java 21
-- Spring Boot 3.x
-- Maven
-- Spring Web
-- Spring Validation
-- Lombok (opcional)
-- JUnit 5
-- Swagger/OpenAPI (diferencial)
-- Jacoco (cobertura de testes)
+- Java 21  
+- Spring Boot 3.x  
+- Maven  
+- Springdoc OpenAPI (Swagger)  
+- JUnit 5  
 
 ---
 
@@ -46,6 +41,7 @@ workspace_velsis/
 ## 3. Como Executar
 
 ### Pré-requisitos
+
 - JDK 21 instalado
 - Maven 3.9+ instalado
 
