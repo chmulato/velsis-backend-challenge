@@ -1,4 +1,3 @@
-
 D:\onedrive\outros\workspace_velsis>mvn clean install
 [INFO] Scanning for projects...
 [INFO]
@@ -16,7 +15,7 @@ D:\onedrive\outros\workspace_velsis>mvn clean install
 [INFO]
 [INFO] --- compiler:3.13.0:compile (default-compile) @ speedviolation ---
 [INFO] Recompiling the module because of changed source code.
-[INFO] Compiling 13 source files with javac [debug parameters release 21] to target\classes
+[INFO] Compiling 14 source files with javac [debug parameters release 21] to target\classes
 [INFO] Annotation processing is enabled because one or more processors were found
   on the class path. A future release of javac may disable annotation processing
   unless at least one processor is specified by name (-processor), or a search
@@ -46,8 +45,8 @@ D:\onedrive\outros\workspace_velsis>mvn clean install
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.mulato.api.speedviolation.controller.ViolationControllerTest
-14:24:26.362 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mulato.api.speedviolation.controller.ViolationControllerTest]: ViolationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:24:26.604 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mulato.api.speedviolation.SpeedViolationApplication for test class com.mulato.api.speedviolation.controller.ViolationControllerTest
+15:19:02.367 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mulato.api.speedviolation.controller.ViolationControllerTest]: ViolationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:19:02.595 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mulato.api.speedviolation.SpeedViolationApplication for test class com.mulato.api.speedviolation.controller.ViolationControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -58,22 +57,22 @@ D:\onedrive\outros\workspace_velsis>mvn clean install
 
  :: Spring Boot ::                (v3.3.2)
 
-2026-07-20T14:24:27.321-03:00  INFO 16396 --- [           main] c.m.a.s.c.ViolationControllerTest        : Starting ViolationControllerTest using Java 21.0.7 with PID 16396 (started by chmul in D:\onedrive\outros\workspace_velsis)
-2026-07-20T14:24:27.321-03:00 DEBUG 16396 --- [           main] c.m.a.s.c.ViolationControllerTest        : Running with Spring Boot v3.3.2, Spring v6.1.11
-2026-07-20T14:24:27.321-03:00  INFO 16396 --- [           main] c.m.a.s.c.ViolationControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2026-07-20T15:19:03.341-03:00  INFO 9304 --- [           main] c.m.a.s.c.ViolationControllerTest        : Starting ViolationControllerTest using Java 21.0.7 with PID 9304 (started by chmul in D:\onedrive\outros\workspace_velsis)
+2026-07-20T15:19:03.343-03:00 DEBUG 9304 --- [           main] c.m.a.s.c.ViolationControllerTest        : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-20T15:19:03.344-03:00  INFO 9304 --- [           main] c.m.a.s.c.ViolationControllerTest        : No active profile set, falling back to 1 default profile: "default"
 WARNING: A Java agent has been loaded dynamically (C:\Users\chmul\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.18\byte-buddy-agent-1.14.18.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
-2026-07-20T14:24:31.148-03:00  INFO 16396 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2026-07-20T14:24:31.149-03:00  INFO 16396 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2026-07-20T14:24:31.167-03:00  INFO 16396 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 10 ms
-2026-07-20T14:24:31.250-03:00  INFO 16396 --- [           main] c.m.a.s.c.ViolationControllerTest        : Started ViolationControllerTest in 4.537 seconds (process running for 6.226)
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.917 s -- in com.mulato.api.speedviolation.controller.ViolationControllerTest
+2026-07-20T15:19:06.288-03:00  INFO 9304 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-20T15:19:06.288-03:00  INFO 9304 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-20T15:19:06.292-03:00  INFO 9304 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-07-20T15:19:06.326-03:00  INFO 9304 --- [           main] c.m.a.s.c.ViolationControllerTest        : Started ViolationControllerTest in 3.626 seconds (process running for 5.18)
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.819 s -- in com.mulato.api.speedviolation.controller.ViolationControllerTest
 [INFO] Running com.mulato.api.speedviolation.controller.ViolationQueryControllerTest
-2026-07-20T14:24:31.995-03:00  INFO 16396 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mulato.api.speedviolation.controller.ViolationQueryControllerTest]: ViolationQueryControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-07-20T14:24:32.027-03:00  INFO 16396 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mulato.api.speedviolation.SpeedViolationApplication for test class com.mulato.api.speedviolation.controller.ViolationQueryControllerTest
+2026-07-20T15:19:06.909-03:00  INFO 9304 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mulato.api.speedviolation.controller.ViolationQueryControllerTest]: ViolationQueryControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-20T15:19:06.939-03:00  INFO 9304 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mulato.api.speedviolation.SpeedViolationApplication for test class com.mulato.api.speedviolation.controller.ViolationQueryControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -84,16 +83,16 @@ Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot lo
 
  :: Spring Boot ::                (v3.3.2)
 
-2026-07-20T14:24:32.107-03:00  INFO 16396 --- [           main] c.m.a.s.c.ViolationQueryControllerTest   : Starting ViolationQueryControllerTest using Java 21.0.7 with PID 16396 (started by chmul in D:\onedrive\outros\workspace_velsis)
-2026-07-20T14:24:32.107-03:00 DEBUG 16396 --- [           main] c.m.a.s.c.ViolationQueryControllerTest   : Running with Spring Boot v3.3.2, Spring v6.1.11
-2026-07-20T14:24:32.107-03:00  INFO 16396 --- [           main] c.m.a.s.c.ViolationQueryControllerTest   : No active profile set, falling back to 1 default profile: "default"
-2026-07-20T14:24:32.534-03:00  INFO 16396 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2026-07-20T14:24:32.534-03:00  INFO 16396 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2026-07-20T14:24:32.534-03:00  INFO 16396 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2026-07-20T14:24:32.546-03:00  INFO 16396 --- [           main] c.m.a.s.c.ViolationQueryControllerTest   : Started ViolationQueryControllerTest in 0.506 seconds (process running for 7.524)
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.648 s -- in com.mulato.api.speedviolation.controller.ViolationQueryControllerTest
+2026-07-20T15:19:07.007-03:00  INFO 9304 --- [           main] c.m.a.s.c.ViolationQueryControllerTest   : Starting ViolationQueryControllerTest using Java 21.0.7 with PID 9304 (started by chmul in D:\onedrive\outros\workspace_velsis)
+2026-07-20T15:19:07.007-03:00 DEBUG 9304 --- [           main] c.m.a.s.c.ViolationQueryControllerTest   : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-20T15:19:07.007-03:00  INFO 9304 --- [           main] c.m.a.s.c.ViolationQueryControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-07-20T15:19:07.483-03:00  INFO 9304 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-20T15:19:07.483-03:00  INFO 9304 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-20T15:19:07.483-03:00  INFO 9304 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-07-20T15:19:07.495-03:00  INFO 9304 --- [           main] c.m.a.s.c.ViolationQueryControllerTest   : Started ViolationQueryControllerTest in 0.549 seconds (process running for 6.346)
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.663 s -- in com.mulato.api.speedviolation.controller.ViolationQueryControllerTest
 [INFO] Running com.mulato.api.speedviolation.repository.ViolationRepositoryTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in com.mulato.api.speedviolation.repository.ViolationRepositoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s -- in com.mulato.api.speedviolation.repository.ViolationRepositoryTest
 [INFO]
 [INFO] Results:
 [INFO]
@@ -113,8 +112,29 @@ Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot lo
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  17.939 s
-[INFO] Finished at: 2026-07-20T14:24:34-03:00
+[INFO] Total time:  15.051 s
+[INFO] Finished at: 2026-07-20T15:19:09-03:00
 [INFO] ------------------------------------------------------------------------
 
 D:\onedrive\outros\workspace_velsis>
+D:\onedrive\outros\workspace_velsis>java -jar target/speedviolation-1.0.0.jar
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2026-07-20T15:19:34.134-03:00  INFO 17712 --- [           main] c.m.a.s.SpeedViolationApplication        : Starting SpeedViolationApplication v1.0.0 using Java 21.0.11 with PID 17712 (D:\onedrive\outros\workspace_velsis\target\speedviolation-1.0.0.jar started by chmul in D:\onedrive\outros\workspace_velsis)
+2026-07-20T15:19:34.138-03:00 DEBUG 17712 --- [           main] c.m.a.s.SpeedViolationApplication        : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-20T15:19:34.138-03:00  INFO 17712 --- [           main] c.m.a.s.SpeedViolationApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-07-20T15:19:36.682-03:00  INFO 17712 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-20T15:19:36.704-03:00  INFO 17712 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-20T15:19:36.704-03:00  INFO 17712 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-20T15:19:36.766-03:00  INFO 17712 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-20T15:19:36.766-03:00  INFO 17712 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2424 ms
+2026-07-20T15:19:37.763-03:00  INFO 17712 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-20T15:19:37.800-03:00  INFO 17712 --- [           main] c.m.a.s.SpeedViolationApplication        : Started SpeedViolationApplication in 4.622 seconds (process running for 5.409)
