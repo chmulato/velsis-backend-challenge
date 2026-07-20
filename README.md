@@ -17,24 +17,28 @@ Infrações são armazenadas em memória e podem ser consultadas por placa.
 
 ## 2. Estrutura do Projeto
 
+```plaintext
 workspace_velsis/
-├── pom.xml
-├── README.md
-└── src/
-		├── main/
-		│    ├── java/
-		│    │    └── com/
-		│    │         └── mulato/
-		│    │              └── api/
-		│    │                   └── speedviolation/
-		│    └── resources/
-		│         └── application.yml
-		└── test/
-			└── java/
-				└── com/
-					└── mulato/
-							└── api/
-								└── speedviolation/
+ ├── pom.xml
+ ├── README.md
+ ├── .gitignore
+ ├── img/
+ └── src/
+      ├── main/
+      │    ├── java/
+      │    │     └── com/
+      │    │          └── mulato/
+      │    │               └── api/
+      │    │                    └── speedviolation/
+      │    └── resources/
+      │          └── application.yml
+      └── test/
+           └── java/
+                └── com/
+                     └── mulato/
+                          └── api/
+                               └── speedviolation/
+```
 
 ---
 
