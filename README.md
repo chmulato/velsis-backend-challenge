@@ -83,3 +83,98 @@ Por fim, a implementação do endpoint de consulta trouxe desafios adicionais re
 Esses desafios, embora naturais em um projeto com múltiplas camadas, contribuíram para uma solução mais robusta, bem estruturada e alinhada com as boas práticas do ecossistema Spring Boot.
 
 ![Tela da aplicação](img/2026_07_20_tela.png)
+
+---
+
+### ✔ Persistência em Memória (Conforme Requisito do Teste)
+
+O teste da Velsis especifica que não deve haver uso de banco de dados.
+Todas as infrações são armazenadas em memória utilizando uma estrutura interna
+(InMemoryViolationRepository), conforme solicitado no PDF da prova prática.
+
+## 12. Checklist de Conformidade com o Teste da Velsis
+
+Esta seção valida ponto a ponto os requisitos funcionais e não funcionais descritos no PDF da prova prática.
+
+### ✔ RF1 — Endpoint de Apuração
+- POST /api/v1/violations/evaluate implementado
+- Header obrigatório x-origin validado (FIXED, MOBILE, HANDHELD)
+- Corpo validado conforme especificação
+- Respostas 200 para casos com e sem infração
+- Respostas 400 para erros de validação
+
+### ✔ RF2 — Validações
+- Placa nos formatos antigo e Mercosul (regex compilada como constante)
+- measuredSpeed > 0
+- speedLimit > 0
+- equipmentId obrigatório
+- captureTimestamp em ISO-8601 e não futuro
+- x-origin obrigatório e válido
+
+### ✔ RF3 — Regras de Apuração
+- Tolerância fixa de 7 km/h para velocidades até 100 km/h
+- Tolerância percentual de 7% (truncado) para velocidades acima de 100 km/h
+- Cálculo do excesso percentual implementado
+- Classificação conforme CTB Art. 218:
+  - MEDIUM (≤ 20%)
+  - SERIOUS (> 20% e ≤ 50%)
+  - VERY_SERIOUS (> 50%)
+
+### ✔ RF4 — Persistência e Consulta
+- Armazenamento em memória conforme solicitado
+- Apenas infrações são persistidas
+- GET /api/v1/violations?licensePlate=ABC1D23 implementado
+
+### ✔ RF5 — Tratamento de Erros
+- ControllerAdvice implementado
+- Mensagens claras e sem stack trace para o cliente
+- Logs contendo placa, equipamento, tipo de erro e timestamp
+
+### ✔ RF6 — Casos Especiais
+- Velocidade dentro da tolerância → sem infração
+- Exatamente 20% e 50% tratados corretamente
+- Velocidade acima de 100 km/h com tolerância percentual
+- Timestamp futuro → erro 400
+
+---
+
+## 13. Checklist de Requisitos Não Funcionais
+
+### ✔ RNF1 — Organização do Código
+- Camadas separadas: controller, service, repository, model
+- DTOs usando records para imutabilidade
+- Regex como constante estática
+
+### ✔ RNF2 — Configuração Externalizada
+- application.yml contendo:
+  - tolerance.fixed
+  - tolerance.percent
+  - tolerance.percentLimit
+
+### ✔ RNF3 — Testes
+- Testes unitários cobrindo:
+  - tolerância
+  - excesso percentual
+  - classificação
+  - validações
+  - casos de borda
+- Testes de controller incluídos
+
+### ✔ RNF4 — Documentação
+- README completo
+- Exemplos de requisição (curl)
+- Swagger/OpenAPI disponível
+
+### ✔ RNF5 — Qualidade de Código
+- Clean Code aplicado
+- Sem prints ou código morto
+- Nomes claros e padronizados
+
+---
+
+## 14. Conclusão
+
+Todos os requisitos funcionais e não funcionais descritos no PDF da prova prática foram implementados.  
+O projeto está pronto para avaliação técnica pela equipe da Velsis.
+
+
